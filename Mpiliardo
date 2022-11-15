@@ -1,0 +1,114 @@
+package mpiliardo;
+
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.PhongMaterial;
+import javafx.scene.shape.*; //to asteraki pernei oles ti times twn shape dld sphere etc
+import javafx.stage.Stage;
+
+
+public class mpiliardo extends Application {
+    
+    @Override
+    public void start(Stage primaryStage) {
+        Sphere s= new Sphere();
+        s.setRadius(80.0);//Promoting=perneis mia metavlhth kai thw anevazei ton typo ean den einai double h timh kai einai int //sto set alazoume tis times me to get pernoume tis times
+        s.setTranslateX(100.0);
+        s.setTranslateY(500.0);
+        PhongMaterial se= new PhongMaterial();
+        se.setDiffuseColor(Color.DEEPPINK);
+        s.setMaterial(se);
+        
+        Sphere r= new Sphere();
+        r.setRadius(80.0);
+        r.setTranslateX(259.0);
+        r.setTranslateY(500.0);
+        PhongMaterial re= new PhongMaterial();
+        re.setDiffuseColor(Color.CORNFLOWERBLUE);
+        r.setMaterial(re);
+                
+        Sphere q= new Sphere();
+        q.setRadius(80.0);
+        q.setTranslateX(418.0);
+        q.setTranslateY(500.0);
+        PhongMaterial qe= new PhongMaterial();
+        qe.setDiffuseColor(Color.CORAL);
+        q.setMaterial(qe);
+        
+        Sphere w= new Sphere();
+        w.setRadius(80.0);
+        w.setTranslateX(577.0);
+        w.setTranslateY(500.0);
+        PhongMaterial we= new PhongMaterial();
+        we.setDiffuseColor(Color.BROWN);
+        w.setMaterial(we);
+        
+        Sphere e= new Sphere();
+        e.setRadius(80.0);
+        e.setTranslateX(180.0);
+        e.setTranslateY(363.0);
+        PhongMaterial ee= new PhongMaterial();
+        ee.setDiffuseColor(Color.GREEN);
+        e.setMaterial(ee);
+        
+        Sphere t= new Sphere();
+        t.setRadius(80.0);
+        t.setTranslateX(339.0);
+        t.setTranslateY(363.0);
+        PhongMaterial te= new PhongMaterial();
+        te.setDiffuseColor(Color.ORANGE);
+        t.setMaterial(te);
+        
+        Sphere y= new Sphere();
+        y.setRadius(80.0);
+        y.setTranslateX(498.0);
+        y.setTranslateY(363.0);
+        PhongMaterial ye= new PhongMaterial();
+        ye.setDiffuseColor(Color.PURPLE);
+        y.setMaterial(ye);
+        
+        Sphere u= new Sphere();
+        u.setRadius(80.0);
+        u.setTranslateX(260.0);
+        u.setTranslateY(225.0);
+        PhongMaterial ue= new PhongMaterial();
+        ue.setDiffuseColor(Color.RED);
+        u.setMaterial(ue);
+        
+        Sphere i= new Sphere();
+        i.setRadius(80.0);
+        i.setTranslateX(418.0);
+        i.setTranslateY(225.0);
+        PhongMaterial ie= new PhongMaterial();
+        ie.setDiffuseColor(Color.BLUE);
+        i.setMaterial(ie);
+        
+        Sphere o= new Sphere();
+        o.setRadius(80.0);
+        o.setTranslateX(338.0);
+        o.setTranslateY(87.0);
+        PhongMaterial oe= new PhongMaterial();
+        oe.setDiffuseColor(Color.YELLOW);
+        o.setMaterial(oe);
+        
+        
+        
+        
+       
+
+        Group g = new Group(s,r,q,w,e,t,y,u,i,o);
+        Scene sc= new Scene(g,800,600);
+        primaryStage.setTitle("Wannabe 8 Ball Pool");
+        primaryStage.setScene(sc);
+        primaryStage.show();
+        
+        
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+}
